@@ -1,0 +1,220 @@
+{
+  "format": "velxio-project",
+  "version": 1,
+  "boards": [
+    {
+      "id": "arduino-uno",
+      "boardKind": "arduino-uno",
+      "x": 211.14192782740187,
+      "y": 240.05610404649224,
+      "activeFileGroupId": "group-arduino-uno",
+      "languageMode": "arduino",
+      "serialBaudRate": 0
+    }
+  ],
+  "fileGroups": {
+    "group-arduino-uno": [
+      {
+        "name": "sketch.ino",
+        "content": "// Arduino Blink Example\nvoid setup() {\n  pinMode(LED_BUILTIN, OUTPUT);\n}\n\nvoid loop() {\n  digitalWrite(LED_BUILTIN, HIGH);\n  delay(1000);\n  digitalWrite(LED_BUILTIN, LOW);\n  delay(1000);\n}"
+      }
+    ]
+  },
+  "components": [
+    {
+      "id": "pushbutton_1782371379337_he6nrrajm",
+      "metadataId": "pushbutton",
+      "x": 120.35705071430218,
+      "y": -55.345649931234334,
+      "properties": {
+        "color": "red",
+        "pressed": false,
+        "label": "",
+        "xray": false
+      }
+    },
+    {
+      "id": "water_level_sensor_1782391326574_pebhpms1f",
+      "metadataId": "water-level-sensor",
+      "x": -34.52831403106448,
+      "y": 72.68705776857277,
+      "properties": {
+        "level": 0
+      }
+    },
+    {
+      "id": "7segment_1782394671176_40ekd522p",
+      "metadataId": "7segment",
+      "x": 514.3675591602249,
+      "y": -21.92870765649829,
+      "properties": {
+        "color": "blue",
+        "offColor": "#444",
+        "background": "black",
+        "digits": "2",
+        "colon": "",
+        "colonValue": false,
+        "pins": "top",
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "wires": [
+    {
+      "waypoints": [],
+      "id": "wire-1782372137366",
+      "start": {
+        "componentId": "pushbutton_1782371379337_he6nrrajm",
+        "pinName": "1.r",
+        "x": 193.35705071430218,
+        "y": -36.345649931234334
+      },
+      "end": {
+        "componentId": "arduino-uno",
+        "pinName": "6",
+        "x": 409.6419278274019,
+        "y": 249.05610404649224
+      },
+      "color": "#22c55e"
+    },
+    {
+      "waypoints": [],
+      "id": "wire-1782373891092",
+      "start": {
+        "componentId": "pushbutton_1782371379337_he6nrrajm",
+        "pinName": "2.r",
+        "x": 193.35705071430218,
+        "y": -17.345649931234334
+      },
+      "end": {
+        "componentId": "arduino-uno",
+        "pinName": "11",
+        "x": 355.1419278274019,
+        "y": 249.05610404649224
+      },
+      "color": "#22c55e"
+    },
+    {
+      "waypoints": [
+        {
+          "x": 317.59561982675586,
+          "y": 55.8912923435017
+        },
+        {
+          "x": 317.59561982675586,
+          "y": 41.02000457763671
+        },
+        {
+          "x": 365.996946532517,
+          "y": 128.2322518874266
+        },
+        {
+          "x": 457.1419278274019,
+          "y": 128.2322518874266
+        }
+      ],
+      "id": "wire-1782394682835",
+      "start": {
+        "componentId": "7segment_1782394671176_40ekd522p",
+        "pinName": "E",
+        "x": 548.6041591602249,
+        "y": 55.8912923435017
+      },
+      "end": {
+        "componentId": "arduino-uno",
+        "pinName": "1",
+        "x": 457.1419278274019,
+        "y": 249.05610404649224
+      },
+      "color": "#22c55e"
+    },
+    {
+      "waypoints": [
+        {
+          "x": 39.47168596893552,
+          "y": 176.86666107177734
+        },
+        {
+          "x": 126.35705071430218,
+          "y": 176.86666107177734
+        }
+      ],
+      "id": "wire-1782394839151",
+      "start": {
+        "componentId": "water_level_sensor_1782391326574_pebhpms1f",
+        "pinName": "-",
+        "x": 39.47168596893552,
+        "y": 158.68705776857277
+      },
+      "end": {
+        "componentId": "pushbutton_1782371379337_he6nrrajm",
+        "pinName": "2.l",
+        "x": 126.35705071430218,
+        "y": -17.345649931234334
+      },
+      "color": "#000000"
+    },
+    {
+      "waypoints": [
+        {
+          "x": 14.471685968935518,
+          "y": 206.86666107177734
+        },
+        {
+          "x": 326.6419278274019,
+          "y": 206.86666107177734
+        }
+      ],
+      "id": "wire-1782462558374",
+      "start": {
+        "componentId": "water_level_sensor_1782391326574_pebhpms1f",
+        "pinName": "S",
+        "x": 14.471685968935518,
+        "y": 158.68705776857277
+      },
+      "end": {
+        "componentId": "arduino-uno",
+        "pinName": "GND.1",
+        "x": 326.6419278274019,
+        "y": 249.05610404649224
+      },
+      "color": "#8B00FF"
+    },
+    {
+      "waypoints": [
+        {
+          "x": -10.528314031064482,
+          "y": 194.86666107177734
+        },
+        {
+          "x": 345.6419278274019,
+          "y": 194.86666107177734
+        }
+      ],
+      "id": "wire-1782462570940",
+      "start": {
+        "componentId": "water_level_sensor_1782391326574_pebhpms1f",
+        "pinName": "+",
+        "x": -10.528314031064482,
+        "y": 158.68705776857277
+      },
+      "end": {
+        "componentId": "arduino-uno",
+        "pinName": "12",
+        "x": 345.6419278274019,
+        "y": 249.05610404649224
+      },
+      "color": "#cc0000"
+    }
+  ],
+  "activeBoardId": "arduino-uno"
+}
