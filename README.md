@@ -2,11 +2,21 @@
 
 
 
-Test
+![Test](screenshot.png)
 
 
 > Built in [Breadboard](https://breadboard.hackclub.com), a Hack Club program. This project took ~1 hours of work.
 
+
+
+## What It Does
+
+Test
+
+
+## How It Works
+
+The circuit is captured in `breadboard-project.json`, and the firmware that runs it is in the `firmware/` folder.
 
 
 ## How To Use It
@@ -16,9 +26,8 @@ test test test
 
 ## Demo
 
-- **Try it:** [https://breadboard.hackclub.com/share/10](https://breadboard.hackclub.com/share/10)
-
-![Test screenshot](/api/uploads/project-screenshots/isbmr2wh1RqftdMqUXNoujqLOcBh8hmc/10/a7bceabf-648c-426e-a238-1b6118d3d803.png)
+- **Simulate it live:** [https://breadboard.hackclub.com/share/10](https://breadboard.hackclub.com/share/10), runs the firmware in the Breadboard simulator
+- **View the design:** [https://taniwankenobi.github.io/breadboard-plays/p/10/](https://taniwankenobi.github.io/breadboard-plays/p/10/)
 
 
 ## Schematic
@@ -28,9 +37,11 @@ The editor snapshot is in `breadboard-project.json`.
 
 ## Bill of Materials
 
-- 7segment: 1
-- pushbutton: 1
-- water-level-sensor: 1
+| Part | Quantity |
+| --- | --- |
+| led-red | 2 |
+| pushbutton | 1 |
+| resistor | 1 |
 
 
 ## Firmware
